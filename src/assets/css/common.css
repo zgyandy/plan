@@ -1,0 +1,80 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,table,tbody,thead,tr,td,p,h1,h2,h3,h4,h5,h6,form,img,button,select,option,textarea {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+}
+button:active, button:hover, bottom:focus {
+  outline: none;
+}
+img {
+  border: none;
+  vertical-align: center;
+}
+address,code,th {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,ol {
+  list-style: none;
+}
+body {
+  font: .16rem "微软雅黑", HELVETICA;
+  background: #f6f7fb;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #178fea;
+  text-decoration: none;
+}
+input, textarea {
+  outline: none;
+  border: none;
+}
+input::placeholder{
+  color: gray;
+  font-size: .16rem;
+}
+input:-ms-input-placeholder {
+  color: gray;
+  font-size: .16rem;
+}
+input::-moz-placeholder {
+  color: gray;
+  font-size: .16rem;
+}
+input::-webkit-input-placeholder {
+  color: gray;
+  font-size: .16rem;
+}
+em {
+  font-style: normal;
+}
+/* 内容 */
+.content {
+  background: #fff;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 34px 10px 10px;
+  margin-bottom: 30px;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: #428adf;
+}
+/* 光标样式 */
+.pointer {
+  cursor: pointer;
+}
