@@ -60,21 +60,17 @@ input::-webkit-input-placeholder {
 em {
   font-style: normal;
 }
-/* 内容 */
-.content {
-  background: #fff;
-  width: 1180px;
-  margin: 0 auto;
-  padding: 34px 10px 10px;
-  margin-bottom: 30px;
-}
 .red {
   color: red;
 }
 .blue {
   color: #428adf;
 }
-/* 光标样式 */
-.pointer {
-  cursor: pointer;
+.layout {
+  width: 7.5rem;
+  margin: 0 auto;
+}
+.layoutContent {
+  width: 7.02rem;
+  margin: 0 auto;
 }

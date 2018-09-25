@@ -3,8 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import store from './srore/index.js'
+import store from './store/index.js'
 import {getData, postData} from './config/base.js'
+// 引入mint-ui部分组件
+import {Header, Button} from 'mint-ui'
+Vue.component(Header.name, Header)
+Vue.component(Button.name, Button)
 Vue.prototype.getData = getData
 Vue.prototype.postData = postData
 // 判断当前环境
@@ -13,7 +17,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 require('./config/rem.js')
 require('./assets/css/common.css')
-
+require('./assets/iconfont/iconfont.css')
+var echarts = require('echarts')
+Vue.prototype.$echarts = echarts
 Vue.config.productionTip = false
 // 修改title值
 router.beforeEach((to, from, next) => {
