@@ -1,5 +1,5 @@
 export default {
   testFilter: (state) => {
-    return (typeof state.test === 'number' ? state.test : 12)
+    return state.test >= 100 ? '' + state.test : state.test >= 10 ? '0' + state.test : '00' + state.test
   }
 }

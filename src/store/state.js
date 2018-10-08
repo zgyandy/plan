@@ -1,4 +1,4 @@
 export default {
   pageNow: '',
-  test: '1212'
+  test: 12
 }

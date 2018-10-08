@@ -4,6 +4,12 @@ export default {
     state.pageNow = payload
   },
   [types.TEST]: (state, payload) => {
-    state.test = payload
+    if (payload) {
+      state.test++
+    } else {
+      if (state.test > 0) {
+        state.test--
+      }
+    }
   }
 }

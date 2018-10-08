@@ -19,6 +19,14 @@ export default new Router({
       }
     },
     {
+      path: '/store',
+      name: 'store',
+      component: resolve => require(['../pages/store/store.vue'], resolve),
+      meta: {
+        title: 'store'
+      }
+    },
+    {
       path: '*',
       redirect: '/home'
     }
