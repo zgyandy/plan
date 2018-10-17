@@ -2,10 +2,14 @@ import axios from 'axios'
 let version = '' // 版本号
 var baseUrl = '' // 请求地址
 // 判断当前环境
-if (process.env.NODE_ENV === 'development') {
+if (location.hostname === 'localhost') {
+  // 本地环境
+  baseUrl = 'lol'
+} else if (location.hostname === 'dev') {
+  // 开发环境
   baseUrl = 'dev'
-} else if (process.env.NODE_ENV === 'production') {
-  baseUrl = 'dev'
+} else if (location.hostname === 'test') {
+  baseUrl = 'test'
 }
 let headers = {
   varsion: version

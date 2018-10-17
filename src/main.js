@@ -12,7 +12,8 @@ Vue.component(Button.name, Button)
 Vue.prototype.getData = getData
 Vue.prototype.postData = postData
 // 判断当前环境
-if (process.env.NODE_ENV === 'development') {
+if (location.hostname === 'localhost') {
+  // 本地环境
   require('./mock.js')
 }
 require('./config/rem.js')
